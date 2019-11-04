@@ -1,0 +1,47 @@
+<root>
+	<website id="5">
+		<webName>oa</webName>
+		<indexUrl>http://oa.cecic.corp/</indexUrl>
+		<loginUrl>http://oa.cecic.corp/names.nsf?Login</loginUrl>
+		<user param="UserName">zhangsan02</user>
+		<password param="Password">password</password>
+		
+		<queryLinks>
+			<prefix>http://oa.cecic.corp/mainapp/sitesearch.nsf/searchresult?openform&amp;</prefix>
+			<paramQuery>query</paramQuery>
+			<paramPage>start</paramPage>
+			<stride>20</stride>
+			<startPageNum>1</startPageNum>
+			<paramList>count</paramList>
+			<paramValueList>20</paramValueList>
+			<linkXpath>/html/body/form/div[2]/table[2]/tbody</linkXpath>
+			<directory active="yes"></directory>
+		</queryLinks>
+		
+		<crawler>
+			<workFile>D:/crawler/</workFile>
+			<threadNum>20</threadNum>
+			<timeout>5000</timeout>
+			<charset>gb2312</charset>
+		</crawler>
+		<pattern>
+			
+		</pattern>
+	</website>
+	
+	<analyzer>
+		<path>D:/NPLIR20140928</path>
+	</analyzer>
+	
+	
+	
+	
+	
+	<!--
+	<infoLinks>
+		<directory active="yes"></directory>
+		
+	</infoLinks>
+	-->
+	
+</root>
